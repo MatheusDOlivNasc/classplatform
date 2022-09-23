@@ -1,0 +1,49 @@
+<section class="content">
+  <h2>{{ title }}</h2>
+  <div class="input" *ngIf="currencyList">
+    <div class="list" *ngFor="let currency of currencyList">
+      <input id={{currency}} name="currency" type="radio" (click)="selectCurrency(currency)">
+      <label for={{currency}}>{{ currency }}</label>
+    </div>
+  </div>
+
+  <ul class="payments" *ngIf="selectedPay">
+    <li><button (click)="selectPay(selectedPay.currency)">
+        <div class="pay" *ngIf="selectedPay.promotion">
+          <p class="promotion">
+            {{ selectedPay.price | currency: selectedPay.currency }}
+          </p>
+          <p class="price">
+            {{ selectedPay.promotion | currency: selectedPay.currency }}
+          </p>
+        </div>
+        <div class="pay" *ngIf="!selectedPay.promotion">
+          <p class="price">
+            {{ selectedPay.price | currency: selectedPay.currency }}
+          </p>
+        </div>
+        <div class="btn" i18n>Select</div>
+      </button></li>
+  </ul>
+
+  <ul class="payments" *ngIf="values">
+    <li *ngFor="let pay of values"><button><a routerLink="/login">
+        <div class="pay" *ngIf="pay.promotion">
+          <p class="promotion">
+            {{ pay.price | currency: pay.currency }}
+          </p>
+          <p class="price">
+            {{ pay.promotion | currency: pay.currency }}
+          </p>
+        </div>
+        <div class="pay" *ngIf="!pay.promotion">
+          <p class="price">
+            {{ pay.price | currency: pay.currency }}
+          </p>
+        </div>
+        <div class="btn" i18n>Select</div>
+      </a></button></li>
+  </ul>
+</section>
+
+<app-loading *ngIf="loading.value == true" [text]="loading.text"></app-loading>

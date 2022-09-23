@@ -1,0 +1,12 @@
+@import '../../../app.component';
+
+.btn {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+        flex: 1;
+        color: #fff;
+    }
+}

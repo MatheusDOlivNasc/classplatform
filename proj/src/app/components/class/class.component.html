@@ -1,0 +1,5 @@
+<section class="content">
+    <router-outlet *ngIf="class == true"></router-outlet>
+</section>
+
+<app-loading *ngIf="loading.value == true" [text]="loading.text"></app-loading>

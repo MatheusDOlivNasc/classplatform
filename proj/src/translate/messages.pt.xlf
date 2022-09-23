@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="2569198147183191075" datatype="html">
+        <source>FORGOT YOUR PASSWORD?</source>
+        <target>ESQUECEU SUA SENHA?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/auth/forgot-password/forgot-password.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7209013431194365786" datatype="html">
+        <source> We will send a link to your email to reset your password. </source>
+        <target> Nós enviaremos um link para seu e-mail para redefinir sua senha. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/auth/forgot-password/forgot-password.component.html</context>
+          <context context-type="linenumber">14,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4646733433598166971" datatype="html">
+        <source><x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/> Did you remember your password? <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;../login&quot;&gt;"/>Back to login<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/><x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/><x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/> Don&apos;t have an account? <x id="START_LINK_1" equiv-text="&lt;a routerLink=&quot;../register&quot;&gt;"/>Register now<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/><x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/></source>
+        <target><x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/> Você se lembra da sua senha? <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;../login&quot;&gt;"/>Volte para entrar<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/><x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/><x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/> Não tem uma conta? <x id="START_LINK_1" equiv-text="&lt;a routerLink=&quot;../register&quot;&gt;"/>Registre-se agora<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/><x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/auth/forgot-password/forgot-password.component.html</context>
+          <context context-type="linenumber">34,41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2255738207434422096" datatype="html">
+        <source>LOGIN</source>
+        <target>ENTRAR</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/auth/login/login.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="127607002501510638" datatype="html">
+        <source> Prices </source>
+        <target> Preços </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/auth/login/login.component.html</context>
+          <context context-type="linenumber">47,49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2012659005494284050" datatype="html">
+        <source>Forgot your password?</source>
+        <target>Esqueceu sua senha?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/auth/login/login.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="260388772085609807" datatype="html">
+        <source>Don&apos;t have an account? <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;../register&quot;&gt;"/>Register now<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
+        <target>Não tem uma conta? <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;../register&quot;&gt;"/>Registre-se já<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/auth/login/login.component.html</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3866977477834057134" datatype="html">
+        <source>REGISTER</source>
+        <target>REGISTRAR</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/auth/register/register.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7504752777131062423" datatype="html">
+        <source> Create account </source>
+        <target> Criar conta </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/auth/register/register.component.html</context>
+          <context context-type="linenumber">37,39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="918071914804297425" datatype="html">
+        <source>Already have an account? <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;../login&quot;&gt;"/>Sign in here<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
+        <target>Já tem uma conta? <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;../login&quot;&gt;"/>Entre aqui<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/auth/register/register.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Loading.1.0.0" datatype="html">
+        <source>Loading class</source>
+        <target>Carregando curso</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/class/class.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1254733971334394935" datatype="html">
+        <source>Comment: <x id="START_TAG_BUTTON" ctype="x-button" equiv-text="&lt;button *ngIf=&quot;response.id &amp;&amp; response.name&quot; (click)=&quot;setResponse()&quot;&gt;"/> To <x id="INTERPOLATION" equiv-text="{{ response.name }}"/> <x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/></source>
+        <target>Comentários: <x id="START_TAG_BUTTON" ctype="x-button" equiv-text="&lt;button *ngIf=&quot;response.id &amp;&amp; response.name&quot; (click)=&quot;setResponse()&quot;&gt;"/> To <x id="INTERPOLATION" equiv-text="{{ response.name }}"/> <x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/comments/comments.component.html</context>
+          <context context-type="linenumber">2,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1081490269712230589" datatype="html">
+        <source>Other comments:</source>
+        <target>Outros comentários:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/comments/comments.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6920130089334660093" datatype="html">
+        <source>My comments:</source>
+        <target>Meus comentários:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/comments/comments.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="786801614005082009" datatype="html">
+        <source>- Class: <x id="INTERPOLATION" equiv-text="{{ class.name }}"/></source>
+        <target>- Aula: <x id="INTERPOLATION" equiv-text="{{ class.name }}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/comments/comments.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1920140604002623032" datatype="html">
+        <source> Your browser does not support the file </source>
+        <target> Seu browser não suporta o arquivo </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/content/content.component.html</context>
+          <context context-type="linenumber">6,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6435759185657289292" datatype="html">
+        <source>Can&apos;t see? <x id="START_LINK" ctype="x-a" equiv-text="&lt;a [href]=&quot;getPDF(file)&quot; download=&quot;file&quot;&gt;"/>Download<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
+        <target>Não consegue visualizar? <x id="START_LINK" ctype="x-a" equiv-text="&lt;a [href]=&quot;getPDF(file)&quot; download=&quot;file&quot;&gt;"/>Baixe<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/content/content.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5200831341853054486" datatype="html">
+        <source> Comments </source>
+        <target> Comentários </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/content/content.component.html</context>
+          <context context-type="linenumber">21,23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3622818806089778726" datatype="html">
+        <source> Class List </source>
+        <target> Lista de aulas </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/content/content.component.html</context>
+          <context context-type="linenumber">27,29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3797570084942068182" datatype="html">
+        <source>Select</source>
+        <target>Selecionar</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/payment/payment.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/payment/payment.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Loading.payment.1" datatype="html">
+        <source>Loading payment method</source>
+        <target>Carregando métodos de pagamento</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/payment/payment.component.ts</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Loading.payment.2" datatype="html">
+        <source>Loading payment</source>
+        <target>Carregando pagamentos</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/payment/payment.component.ts</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Loading.payment.3" datatype="html">
+        <source>Verify payments</source>
+        <target>Verificar pagamentos</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/payment/payment.component.ts</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Payment.title.1" datatype="html">
+        <source>Choose payment method</source>
+        <target>Escolher métodos de pagamento</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/payment/payment.component.ts</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Payment.title.2" datatype="html">
+        <source>Payment methods</source>
+        <target>Métodos de pagamento</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/payment/payment.component.ts</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3027326206724579393" datatype="html">
+        <source>Profile info:</source>
+        <target>Informações do perfil:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/profile/profile.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4033304074493052528" datatype="html">
+        <source>Change profile</source>
+        <target>Mudar perfil</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/profile/profile.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8143260783218369858" datatype="html">
+        <source>Redefine password:</source>
+        <target>Redefinir senha:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/profile/profile.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6309828574111583895" datatype="html">
+        <source>Change password</source>
+        <target>Mudar senha</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/profile/profile.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Profile.name" datatype="html">
+        <source>Name: </source>
+        <target>Nome: </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/profile/profile.component.ts</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Profile.lastname" datatype="html">
+        <source>Lastname: </source>
+        <target>Último nome: </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/profile/profile.component.ts</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Profile.newpassword" datatype="html">
+        <source>New password: </source>
+        <target>Nova senha: </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/profile/profile.component.ts</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Profile.rewrite" datatype="html">
+        <source>Rewrite: </source>
+        <target>Reescreva: </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/profile/profile.component.ts</context>
+          <context context-type="linenumber">109</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Profile.loading.1" datatype="html">
+        <source>Changing name</source>
+        <target>Mudando nome</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/profile/profile.component.ts</context>
+          <context context-type="linenumber">160</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Profile.loading.2" datatype="html">
+        <source>Changing password</source>
+        <target>Mudando senha</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/profile/profile.component.ts</context>
+          <context context-type="linenumber">167</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Profile.loading.3" datatype="html">
+        <source>Updating profile</source>
+        <target>Atualizando perfil</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/profile/profile.component.ts</context>
+          <context context-type="linenumber">182</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Profile.loading.4" datatype="html">
+        <source>Updanting email</source>
+        <target>Atualizando email</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/profile/profile.component.ts</context>
+          <context context-type="linenumber">192</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1327209177760159991" datatype="html">
+        <source>Your browser does not support the video tag.</source>
+        <target>Seu browser não suporta a tag video.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/video/video.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Language" datatype="html">
+        <source>en-US</source>
+        <target>pt-BR</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/services/auth.service.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

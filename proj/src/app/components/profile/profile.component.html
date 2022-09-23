@@ -1,0 +1,45 @@
+<form [formGroup]="profile.group" (ngSubmit)="updateProfile()">
+  <h2 i18n>Profile info:</h2>
+  <ul>
+    <li *ngFor="let control of setControls(profile.controls)">
+      <div class="input">
+        <label for={{control.name}} *ngIf="control.label">{{ control.label }}</label>
+        <input
+          id={{control.name}}
+          name={{control.name}}
+          type={{control.type}}
+          formControlName={{control.name}}
+          autocomplete={{control.autocomplete}}
+          >
+      </div>
+    </li>
+  </ul>
+  <button
+    class="btn"
+    type="submit"
+    [disabled]="profile.group.invalid"
+    i18n>Change profile</button>
+</form>
+
+<form [formGroup]="password.group" (ngSubmit)="updatePassword()">
+  <h2 i18n>Redefine password:</h2>
+  <ul>
+    <li *ngFor="let control of setControls(password.controls)">
+      <div class="input">
+        <label for={{control.name}} *ngIf="control.label">{{ control.label }}</label>
+        <input
+          id={{control.name}}
+          name={{control.name}}
+          type={{control.type}}
+          formControlName={{control.name}}
+          autocomplete={{control.autocomplete}}
+          >
+      </div>
+    </li>
+  </ul>
+  <button
+    class="btn"
+    type="submit"
+    [disabled]="password.group.invalid || password.group.value.password != password.group.value.repassword"
+    i18n>Change password</button>
+</form>

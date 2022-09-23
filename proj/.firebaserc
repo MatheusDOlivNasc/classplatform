@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "plataformacursos-fd550": {
+      "hosting": {
+        "proj": [
+          "plataformacursos-fd550"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "plataformacursos-fd550"
+  }
+}

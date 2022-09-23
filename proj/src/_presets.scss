@@ -1,0 +1,107 @@
+/* Medias */
+$phone: 425px;
+$tablet: 768px;
+$desktop: 1024px;
+
+/* Colors */
+$primary: #80242b;
+$secondary: #DB9E9E;
+$white: rgb(255, 255, 255);
+$light-gray: rgb(237, 237, 237);
+
+// Other colors
+$lightPink: #FFF2F2;
+$mediumPink: #FFF2F2;
+$darkbeige: #9C7875;
+$brown: #BC7A6B;
+$gray: #5c5c5c;
+
+/* Fonts */
+$title: 'Libre Baskerville', serif;
+$text: 'Roboto', sans-serif;
+
+/* Mixins */
+@mixin type($weight: regular, $font: $text) {
+  font-weight: map-get(
+    (
+      regular: 400,
+      bold: 500,
+      extrabold: 700,
+    ), $weight
+  );
+  font-family: $font;
+}
+@mixin border-text($color: #fff) {
+  text-shadow: 2px 0 $color, -2px 0 $color, 0 2px $color, 0 -2px $color,
+    1px 1px $color, -1px -1px $color, 1px -1px $color, -1px 1px $color;
+}
+@mixin transition($velocity: 'medium', $item: all, $animation: ease-in-out) {
+  transition: map-get(('fast': $item $animation 0.1s,
+        'medium': $item $animation 0.25s,
+        'slow': $item $animation 0.5s,
+      ), $velocity);
+}
+@mixin no-select() {
+  -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+/* CSS */
+body, * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  @include type(regular, $text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @include type('bold', $title)
+}
+
+p {
+  @include type('regular', $text)
+}
+
+.btn {
+  width: 100%;
+  padding: 10px 5px;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 0;
+  background-color: $primary;
+  color: #fff;
+  font-size: 12pt;
+  border: 0;
+  cursor: pointer;
+  box-shadow: 0 0 3px 2px rgba(0,0,0,0.3);
+  @include type('bold', $title);
+  @include transition();
+  &:disabled {
+    opacity: 20%;
+    cursor: not-allowed;
+  }
+  &:hover {
+    box-shadow: 0 0 2px 0px rgba(0,0,0,0.3);
+  }
+}
+
+/* Loading animation */
+
+@keyframes loading-bar {
+  0%  {margin-left: 0;}
+  50% {margin-left: 70%;}
+  100% {margin-left: 0%;}
+}
+
+@mixin loading-animation() {
+  animation-name: loading-bar;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}

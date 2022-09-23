@@ -1,0 +1,57 @@
+<section class="auth">
+  <form [formGroup]="formLogin" (ngSubmit)="login()">
+    <h2 i18n>LOGIN</h2>
+    <div class="input" appearance="fill">
+      <input 
+        placeholder="Email"
+        formControlName="email"
+        type="email"
+        autocomplete="current-email"
+        required>
+    </div>
+    <div class="input" appearance="fill">
+      <input
+        placeholder="Password"
+        [type]="hide ? 'password' : 'text'"
+        formControlName="password"
+        autocomplete="current-password" i18n>
+      <button
+        (click)="hide = !hide"
+        type="button"
+        [attr.aria-label]="'Hide password'"
+        [attr.aria-pressed]="hide">
+        <span class="material-symbols-outlined">
+          {{hide ? 'visibility_off' : 'visibility'}}
+        </span>
+      </button>
+    </div>
+
+    <div *ngIf="error.value == true" class="error-message">
+      {{ error.text }}
+    </div>
+
+    <div class="buttons">
+      <button
+        class="btn"
+        type="submit"
+        [disabled]="formLogin.invalid"
+        aria-hidden="false"
+        aria-label="Login">
+        Continue
+      </button>
+      <button
+        class="btn"
+        type="button"
+        aria-hidden="false"
+        aria-label="Prices">
+        <a routerLink="/payment" i18n>
+          Prices
+        </a>
+      </button>
+    </div>
+    <div class="text-alt">
+      <a routerLink="../forgotpassword" i18n>Forgot your password?</a>
+      <p i18n>Don't have an account? <a routerLink="../register">Register now</a></p>
+    </div>
+  </form>
+</section>

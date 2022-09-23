@@ -1,0 +1,43 @@
+<header>
+  <h1>
+    <a routerLink="./">
+      <img
+        src="https://firebasestorage.googleapis.com/v0/b/claudiagiuberti.appspot.com/o/baseImages%2Flogo_white.png?alt=media&token=45082de2-816d-401e-804f-db26e2ae6238"
+        alt="Welcome to the class" i18n>
+    </a>
+  </h1>
+  <span class="spacer"></span>
+  <nav>
+    <ul>
+      <li><a>
+        <span class="material-symbols-outlined">
+          translate
+        </span>
+        <ul class="dropdown">
+          <li><a href="/pt-BR/class">pt-BR</a></li>
+          <li><a href="/en-US/class">en-US</a></li>
+        </ul>
+      </a></li>
+      <li *ngIf="!user"><a routerLink="/login">
+        <span class="material-symbols-outlined">
+          login
+        </span>
+      </a></li>
+      <li *ngIf="user"><a routerLink="/c/profile">
+        <span class="material-symbols-outlined">
+          account_circle
+        </span>
+      </a></li>
+      <li *ngIf="user" [ngClass]="{'alert': user.alert}"><a routerLink="/c/comments">
+        <span class="material-symbols-outlined">
+          forum
+        </span>
+      </a></li>
+      <li *ngIf="user"><button (click)="logout()">
+        <span class="material-symbols-outlined">
+          logout
+        </span>
+      </button></li>
+    </ul>
+  </nav>
+</header>

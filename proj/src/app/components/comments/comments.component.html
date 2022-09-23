@@ -1,0 +1,55 @@
+<form *ngIf="select || response.class" [formGroup]="formComment" (submit)="send()">
+  <label for="comment" i18n>Comment: 
+    <button *ngIf="response.id && response.name" (click)="setResponse()">
+      To {{ response.name }}
+    </button>
+  </label>
+  <div class="input">
+    <textarea
+      id="comment"
+      name="comment"
+      formControlName="comment"
+      required
+      autocomplete="off"
+      ></textarea>
+    <button type="submit" [disabled]="formComment.invalid">
+      <span class="material-symbols-outlined">send</span>
+    </button>
+  </div>
+</form>
+
+<section class="comments">
+  <h3 *ngIf="select" i18n>Other comments:</h3>
+  <h2 *ngIf="!select" i18n>My comments:</h2>
+  <ul>
+    <li class="classes" *ngFor="let class of comments">
+      <h3 *ngIf="class.name" i18n>- Class: {{ class.name }}</h3>
+      <ul *ngIf="comments">
+        <li class="primary" *ngFor="let comment of class.comments">
+          <h4>{{comment.name}}:</h4>
+          <p>{{comment.comment}}</p>
+          <button 
+            class="icon-btn"
+            type="button"
+            (click)="setResponse(comment.id, comment.user, comment.name, comment.class)"
+            >
+            <span class="material-symbols-outlined">reply</span>
+          </button>
+          <ul class="response" *ngIf="comment.responses">
+            <li *ngFor="let response of comment.responses">
+              <h4>{{response.name}}:</h4>
+              <p>{{response.comment}}</p>
+              <button
+                class="icon-btn"
+                type="button"
+                (click)="setResponse(comment.id, response.user, response.name, comment.class)"
+                >
+                <span class="material-symbols-outlined">reply</span>
+              </button>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</section>

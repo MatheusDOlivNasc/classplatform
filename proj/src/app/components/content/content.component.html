@@ -1,0 +1,38 @@
+<h2 *ngIf="class">{{ class.name }}</h2>
+<section class="file" *ngIf="class">
+  <div *ngIf="extension == 'pdf' && file" class="pdf">
+    <object [data]='getPDF(file)' type="application/pdf" style="min-width: 300px; min-height: 300px;">
+      <embed [src]="getPDF(file)" width="100%" height="800px" />
+      <p i18n>
+        Your browser does not support the file
+      </p>
+    </object>
+    <p i18n>Can't see? <a [href]="getPDF(file)" download="file">Download</a></p>
+  </div>
+  <div *ngIf="extension != 'pdf' && file" class="video">
+    <app-video [url]='file'></app-video>
+  </div>
+</section>
+
+<section class="extras">
+  <ul class="select">
+    <li>
+      <input type="radio" id="comments" name="options" (click)="options = 'comments'" [checked]="options == 'comments'">
+      <label for="comments" i18n>
+        Comments
+      </label>
+    </li>
+    <li>
+      <input type="radio" id="classlist" name="options" (click)="options = 'classlist'" [checked]="options == 'classlist'">
+      <label for="classlist" i18n>
+        Class List
+      </label>
+    </li>
+  </ul>
+  <div *ngIf="options == 'classlist' && class">
+    <app-sumary [select]="class.id"></app-sumary>
+  </div>
+  <div *ngIf="options == 'comments' && class.id">
+    <app-comments [select]="class.id"></app-comments>
+  </div>
+</section>

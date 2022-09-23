@@ -1,0 +1,22 @@
+<ul class="sumary" *ngIf="modules">
+  <li *ngFor="let module of modules">
+    <input type="checkbox" name={{module.id}} id={{module.id}}>
+    <label>
+      <label for={{module.id}}><h2>
+        {{ module.name }}
+        <div class="spacer"></div>
+        <span class="material-symbols-outlined">
+          expand_more
+        </span>
+      </h2></label>
+      <ul *ngIf="module.classes">
+        <li
+          *ngFor="let class of module.classes"
+          [ngClass]="{'select': class.id == select ? true : false}"
+          >
+          <a routerLink="/c/content/{{class.id}}">{{ class.name }}{{ class.id == select ? " --watching" : "" }}</a>
+        </li>
+      </ul>
+    </label>
+  </li>
+</ul>

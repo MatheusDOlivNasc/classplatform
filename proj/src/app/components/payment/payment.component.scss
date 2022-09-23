@@ -1,0 +1,58 @@
+@import '../../app.component';
+
+h2 {
+  text-align: center;
+  @include type(extrabold, $title);
+  font-size: 24pt;
+  max-width: 95%;
+  color: $primary;
+  margin: 20px auto;
+  text-align: center;
+}
+.payments {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: auto;
+  width: 90%;
+  max-width: 1040px;
+  li {
+    flex: 1;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+    button {
+      flex: 1;
+      background-color: $light-gray;
+      padding: 10px;
+      border-radius: 5px;
+      border: 0;
+      width: 95%;
+      margin: auto;
+      cursor: pointer;
+      @include transition();
+      a {
+        background-color: transparent;
+      }
+      .pay {
+        margin: 20px 0;
+        p {
+          padding-bottom: 10px;
+          &.promotion {
+            font-size: 12pt;
+            text-decoration: line-through;
+          }
+          &.price {
+            font-size: 16pt;
+            @include type(extrabold);
+            color: $primary;
+          } 
+        }
+      }
+    }
+  }
+  @media screen and (max-width: $tablet) {
+    flex-direction: column;
+  }
+}

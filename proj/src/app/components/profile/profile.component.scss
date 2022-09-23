@@ -1,0 +1,12 @@
+@import '../../app.component';
+
+form {
+    padding: 0 10px;
+    h2 {
+        padding: 10px;
+        margin-top: 15px;
+        @include type(extrabold, $title);
+        color: $primary;
+        text-align: center;
+    }
+}

@@ -1,0 +1,67 @@
+{
+  "functions": {
+    "ignore": [
+      "node_modules",
+      ".git",
+      "firebase-debug.log",
+      "firebase-debug.*.log"
+    ],
+    "predeploy": "npm --prefix \"$RESOURCE_DIR\" run build",
+    "source": "functions"
+  },
+  "hosting": {
+    "public": "dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/en-US/home",
+        "destination": "/en-US/home/index.html",
+        "region": "us-central1"
+      },
+      {
+        "source": "/en-US/class/**",
+        "destination": "/en-US/class/index.html",
+        "dynamicLinks": true,
+        "region": "us-central1"
+      },
+      {
+        "source": "/pt-BR/home/",
+        "destination": "/pt-BR/home/index.html",
+        "region": "southamerica-east1"
+      },
+      {
+        "source": "/pt-BR/class/**",
+        "destination": "/pt-BR/class/index.html",
+        "dynamicLinks": true,
+        "region": "southamerica-east1"
+      }
+    ],
+    "redirects": [
+      {
+        "source" : "/",
+        "destination" : "/en-US/home",
+        "type" : 301
+      }
+    ],
+
+    "headers": [{
+      "source" : "**",
+      "headers" : [
+        {
+          "key" : "Access-Control-Allow-Origin",
+          "value" : "*"
+        }
+      ]
+    }],
+
+    "cleanUrls": true,
+
+    "trailingSlash": false,
+    
+    "appAssociation": "AUTO"
+  }
+}

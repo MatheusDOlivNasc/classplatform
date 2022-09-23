@@ -1,0 +1,11 @@
+{
+    "/api": {
+        "target": "https://us-central1-plataformacursos-fd550.cloudfunctions.net/app",
+        "secure": false,
+        "logLevel": "debug",
+        "pathRewrite": {
+            "^/api": ""
+        },
+        "changeOrigin": true
+    }
+}

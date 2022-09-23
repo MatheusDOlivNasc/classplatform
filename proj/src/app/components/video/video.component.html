@@ -1,0 +1,69 @@
+<section #screen id="screen">
+  <video #media *ngIf="url" preload="auto">
+    <source src={{url}} type="video/mp4">
+    <source src={{url}} type="video/ogg">
+    <source src={{url}} type="video/mov">
+    <source src={{url}} type="video/mpg">
+    <source src={{url}} type="video/avi">
+    <source src={{url}} type="video/wmv">
+    <source src={{url}} type="video/webm">
+    <source src={{url}} type="video/flv">
+    <p i18n>Your browser does not support the video tag.</p>
+  </video>
+  <div #controls class="controls" [ngStyle]="{'display': video.controls}">
+    <div class="command buttons">
+      <span class="volume desktop">
+        <button (click)="control('mute')">
+          <span #volumeIcon class="material-symbols-outlined">volume_down</span>
+        </button>
+        <div class="grid">
+          <input
+            #volumeBar
+            class="bar"
+            type="range"
+            max="1"
+            min="0"
+            step="0.01"
+            (change)="changeVolume()"
+            >
+        </div>
+      </span>
+      <span class="spacer desktop"></span>
+      <button aria-label="Replay 10" (click)="control('replay10')">
+        <span class="material-symbols-outlined">replay_10</span>
+      </button>
+      <button aria-label="Play / pause" (click)="control('playPause')">
+        <span #playPauseIcon class="material-symbols-outlined">pause</span>
+      </button>
+      <button aria-label="Forward 10" (click)="control('forward10')">
+        <span class="material-symbols-outlined">forward_10</span>
+      </button>
+      <span class="spacer"></span>
+      <button aria-label="Fullscreen" (click)="control('fullscreen')">
+        <span #fullscreenIcon class="material-symbols-outlined">fullscreen</span>
+      </button>
+    </div>
+    <div class="command progress">
+      <div #progressGrid class="grid">
+        <input
+          #progressValue
+          class="value"
+          type="range"
+          value="0"
+          max="100"
+          min="0"
+          step="0.1"
+          (change)="changeProgress()"
+          >
+        <span class="bar" [ngStyle]="{'width': video.percentTime }"></span>
+        <span class="buffer" [ngStyle]="{'width': video.percentBuffer }"></span>
+        <span class="background"></span>
+      </div>
+    </div>
+    <div class="command timer">
+      <span class="video-current-time">
+        {{ video.currentTime | videoTime }} / {{ video.duration | videoTime }}
+      </span>
+    </div>
+  </div>
+</section>

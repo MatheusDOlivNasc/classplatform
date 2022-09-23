@@ -1,0 +1,107 @@
+@import '../../app.component';
+
+header {
+  background-color: $primary;
+  display: flex;
+  h1 {
+    height: 80px;
+    padding: 10px;
+    img {
+      max-height: 100%;
+      max-width: 100%;
+    }
+  }
+  .spacer {
+    flex: 1;
+  }
+  nav {
+    ul {
+      display: flex;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      li {
+        list-style: none;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 15px;
+        margin: 0;
+        &.alert {
+          span {
+            position: relative;
+            &:before {
+              content: ' ';
+              position: absolute;
+              top: -5px;
+              right: -5px;
+              border-radius: 100%;
+              box-shadow: 0 0 2px 2px rgba(0,0,0,0.3);
+              width: 10px;
+              height: 10px;
+              background-color: $secondary;
+            }
+          }
+        }
+        a, button {
+          flex: 1;
+          border: 0;
+          color: white;
+          background-color: transparent;
+          font-size: 12pt;
+          height: 20px;
+          line-height: 20px;
+          text-decoration: none;
+          
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          position: relative;
+          outline: 0;
+          .dropdown {
+            position: absolute;
+            top: 24px;
+            left: 0;
+            background-color: white;
+            color: $primary;
+            display: none;
+            flex-direction: column;
+            width: 80px;
+            height: auto;
+            box-shadow: 0 0 3px 1px rgba(0,0,0,0.3);
+            outline: 0;
+            li {
+              padding: 5px 10px;
+              display: flex;
+              width: 100%;
+              @include transition(); 
+              a {
+                flex: 1;
+                color: $primary;
+                outline: 0;
+              }
+              &:hover {
+                background-color: $secondary;
+              }
+            }
+          }
+          &:hover {
+            .dropdown {
+              display: flex;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: $phone) {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    nav {
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+  }
+}

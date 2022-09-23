@@ -1,0 +1,45 @@
+<section class="auth">
+  <form [formGroup]="formRegister" (ngSubmit)="register()">
+    <h2 class="title" i18n>REGISTER</h2>
+    <div class="input" appearance="fill">
+      <input placeholder="Email" formControlName="email" type="email" autocomplete="current-email">
+    </div>
+    <div class="input" appearance="fill">
+      <input placeholder="Name" matInput formControlName="name" type="text" autocomplete="name" i18n>
+    </div>
+    <div class="input" appearance="fill">
+      <input placeholder="Last name" matInput formControlName="lastname" type="text" autocomplete="name" i18n>
+    </div>
+    <div class="input" appearance="fill">
+      <input
+        placeholder="Password"
+        [type]="hide ? 'password' : 'text'"
+        formControlName="password"
+        autocomplete="current-password" i18n>
+      <button
+        (click)="hide = !hide"
+        type="button"
+        [attr.aria-label]="'Hide password'"
+        [attr.aria-pressed]="hide">
+        <span class="material-symbols-outlined">
+          {{hide ? 'visibility_off' : 'visibility'}}
+        </span>
+      </button>
+    </div>
+    <div *ngIf="error.value == true" class="error-message">{{ error.text }}</div>
+
+    <div class="buttons">
+      <button
+        class="btn"
+        type="submit"
+        [disabled]="formRegister.invalid"
+        aria-hidden="false"
+        aria-label="Login" i18n>
+        Create account
+      </button>
+    </div>
+    <div class="text-alt">
+      <p i18n>Already have an account? <a routerLink="../login">Sign in here</a></p>
+    </div>
+  </form>
+</section>
